@@ -46,6 +46,8 @@
 		"vite": "^5.4.11"
 	},
 	"dependencies": {
+		"@fontsource/courier-prime": "^5.1.1",
+		"@fontsource/press-start-2p": "^5.1.1",
 		"@neondatabase/serverless": "^0.9.4",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@tailwindcss/forms": "^0.5.9",

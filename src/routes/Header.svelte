@@ -2,37 +2,30 @@
 	import { page } from '$app/stores';
 	import logo from '$lib/images/svelte-logo.svg';
 	import github from '$lib/images/github.svg';
+	import mail from '$lib/images/maildotru.svg';
 </script>
 
 <header>
-	<div class="corner">
-		<a href="https://svelte.dev/docs/kit">
-			<img src={logo} alt="SvelteKit" />
-		</a>
-	</div>
 
-	<nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
+	<nav class="font-typewrite">
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/">me</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/blog' ? 'page' : undefined}>
+				<a href="/blog">blog</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/gallery' ? 'page': undefined}>
+				<a href="/gallery">gallery</a>
+			</li>
+			<li aria-current={$page.url.pathname === '/chaos' ? 'page': undefined}>
+				<a href="/chaos">chaos</a>
 			</li>
 		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/paenugula">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
@@ -66,7 +59,6 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: rgba(255, 255, 255, 0.7);
 	}
 
 	svg {
@@ -106,7 +98,7 @@
 		top: 0;
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
-		border-top: var(--size) solid var(--color-theme-1);
+		border-top: var(--size) solid var(--color-theme-0);
 	}
 
 	nav a {
@@ -117,7 +109,7 @@
 		color: var(--color-text);
 		font-weight: 700;
 		font-size: 0.8rem;
-		text-transform: uppercase;
+		text-transform: lowercase;
 		letter-spacing: 0.1em;
 		text-decoration: none;
 		transition: color 0.2s linear;

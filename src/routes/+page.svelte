@@ -2,30 +2,30 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcomeFallback from '$lib/images/svelte-welcome.png';
+	import phaniPFP from '$lib/images/phani_pfp.jpg';
+	import Typewrite from '../components/Typewrite.svelte';
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Phani's site" />
 </svelte:head>
 
 <section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
 
-		to your new<br />SvelteKit app
+	<picture>
+		<source srcset={phaniPFP} type="image/webp" />
+		<img src={phaniPFP} alt="Welcome" />
+	</picture>
+	
+	<h1 class="font-digi">
+		<Typewrite text="Hi, I am Phani"/>
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	<div class="font-typewrite invisible">
+		<Typewrite text="Ask <em>me</em> a question below"/>
+	</div>
 
-	<Counter />
 </section>
 
 <style>
@@ -34,25 +34,30 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+	}
+	
+	picture img {
+		width: 50vh;
+		border-radius: 20%;
 	}
 
 	h1 {
-		width: 100%;
+		padding: 0;
 	}
 
-	.welcome {
-		display: block;
+	.me-pic {
+		display: flex;
 		position: relative;
 		width: 100%;
-		height: 0;
+		height: 100%;
 		padding: 0 0 calc(100% * 495 / 2048) 0;
 	}
 
-	.welcome img {
+	.me-pic img {
 		position: absolute;
-		width: 100%;
+		width: 20%;
 		height: 100%;
+		justify-content: left;
 		top: 0;
 		display: block;
 	}
