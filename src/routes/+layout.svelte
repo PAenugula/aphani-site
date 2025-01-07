@@ -13,8 +13,8 @@
 	</main>
 
 	<footer>
-		<p>
-			under construction
+		<p class="text-sky-900 text-sm">
+			site under construction
 		</p>
 	</footer>
 </div>

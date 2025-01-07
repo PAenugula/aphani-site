@@ -1,0 +1,51 @@
+
+CONTACT INFO:
+
+Phone Number: (916) 805-0317
+Located: New York City, NY
+Email: phanirajaenugula@gmail.com
+Website: aphani.com
+Linkedin: linkedin.com/in/phaniraj-aenugula
+
+
+WORK EXPERIENCE:
+
+Google - Assistant Infra
+Aug. 2022 - Present
+Software Engineer III
+New York City, NY
+- Working on Assistant infrastructure and privacy
+- Keeping Assistant user information safe and policy compliant
+- Supporting NLP Model infrastructure and training data storage systems
+
+Amazon - Kindle Publishing
+May. 2019 - May 2022 
+Junior SDE III
+San Luis Obispo, CA
+- Developed back-end services that manage 30 billion assets for various Amazon services like Kindle, Alexa, and Merch.
+- Collaborated in a scrum environment to build a large assortment of applications using Java, Javascript, and, Kotlin
+- Implemented microservices that integrated with AWS DynamoDB, S3, CloudSearch, Redshift, Lambda, and more
+- Pushed over 70 service bug fixes and delivered several custom dev tool features that reduced operational costs 
+
+
+SKILLS:
+
+Programming Languages: Strong in C++,Python, Kotlin, Java, JavaScript/Typescript, Elixir. Proficient in Solidity, SQL, Racket, Go, Nodejs, Web3js
+Software/Tools: AWS(EC2, Lambda, DynamoDB, S3), Git, GCP(Firebase, Compute), Linux(Ubuntu), Docker, Heroku, Postgres
+Frameworks: Android Studio, JSP, Spring, Tensorflow, Node/npm, Gradle, Maven, GraphQL, REST, Ethereum/Solidity/Hyperledger
+
+
+AWARDS:
+1st Place BinrarySearch Competition HackUCI
+Jan 2021
+- Placed first in after a series of competetive programming questions
+
+3rd Place Camp PolyHacks 2019
+Jan. 2019
+- Worked in a team of six to design, develop, and create a business model for a mobile that supports environmental sustainability organizations and events by linking organizers to volunteers
+- Created a proof of concept functional Native Android app in Java and XML utilizing Firebase Databases and Google Maps API
+
+
+
+
+
