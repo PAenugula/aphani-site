@@ -8,7 +8,7 @@
 
 	let promise = $state();
 	let pressed = $state(false);
-	let question = $state("");
+	let question = $state('');
 	let key = $state();
 	let recentQuestion = $state();
 	let empty_question = $state(false);
@@ -86,21 +86,28 @@
 	<br />
 	{#if pressed}
 		{#if empty_question}
-		<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
-			<span class="block sm:inline">Enter a question please</span>
-		</div>
-		{:else}
-		{#await promise}
-			<p>Loading...</p>
-		{:then number}
-			<p class="text-sky-700 text-sm/6"><em>you asked</em>: <strong>{recentQuestion}</strong></p>
-			<br/>
-			{#key key}
-			<div class="gem-response">
-				<Typewrite interval="20" text={"<strong>Phani</strong>: " + key}/>
+			<div
+				class="relative rounded border border-red-400 bg-red-100 px-4 py-3 text-red-700"
+				role="alert"
+			>
+				<span class="block sm:inline">Enter a question please</span>
 			</div>
-			{/key}
-		{/await}
+		{:else}
+			{#await promise}
+				<p>Loading...</p>
+			{:then number}
+				<p class="text-sm/4 text-sky-700"><em>you asked</em>: <strong>{recentQuestion}</strong></p>
+				<br />
+				{#if key != undefined}
+					{#key key}
+						<div class="gem-response">
+							<Typewrite interval="20" text={'<strong>Phani</strong>: ' + key} />
+						</div>
+					{/key}
+				{:else}
+					<p>Loading...</p>
+				{/if}
+			{/await}
 		{/if}
 	{/if}
 </section>
@@ -126,7 +133,7 @@
 		width: 50vh;
 		height: 10vh;
 	}
-	
+
 	.gem-response {
 		width: 70%;
 	}

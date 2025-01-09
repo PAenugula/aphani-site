@@ -1,3 +1,6 @@
+Here is my resume
+
+I work at Google on Google Assistant Infrastructure specializing in Policy.
 
 CONTACT INFO:
 
@@ -10,17 +13,19 @@ Linkedin: linkedin.com/in/phaniraj-aenugula
 
 WORK EXPERIENCE:
 
-Google - Assistant Infra
-Aug. 2022 - Present
+Company: Google
+Team: Google Assistant
+August 2022 - Present
 Software Engineer III
 New York City, NY
 - Working on Assistant infrastructure and privacy
 - Keeping Assistant user information safe and policy compliant
 - Supporting NLP Model infrastructure and training data storage systems
 
-Amazon - Kindle Publishing
+Company: Amazon
+Team: Kindle Publishing
 May. 2019 - May 2022 
-Junior SDE III
+Junior Software Developer III
 San Luis Obispo, CA
 - Developed back-end services that manage 30 billion assets for various Amazon services like Kindle, Alexa, and Merch.
 - Collaborated in a scrum environment to build a large assortment of applications using Java, Javascript, and, Kotlin
