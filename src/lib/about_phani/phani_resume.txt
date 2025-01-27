@@ -33,6 +33,10 @@ San Luis Obispo, CA
 - Pushed over 70 service bug fixes and delivered several custom dev tool features that reduced operational costs 
 
 
+EDUCATION:
+* Graduated from Cal Poly San Luis Obispo in 2022
+* Majored in Computer Science with a minor in Math
+
 SKILLS:
 
 Programming Languages: Strong in C++,Python, Kotlin, Java, JavaScript/Typescript, Elixir. Proficient in Solidity, SQL, Racket, Go, Nodejs, Web3js
