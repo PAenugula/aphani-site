@@ -14,8 +14,16 @@ Linkedin: linkedin.com/in/phaniraj-aenugula
 WORK EXPERIENCE:
 
 Company: Google
+Team: Google Grain
+May 2025 - Present
+Software Engineer III
+Sunnyvale, CA
+- Working on Grain, an open-source data ingestion framework for efficiently training models.
+- Supporting 1P and 3P Gen AI use cases and model training pipelines.
+
+Company: Google
 Team: Google Assistant
-August 2022 - Present
+August 2022 - May 2025
 Software Engineer III
 New York City, NY
 - Working on Assistant infrastructure and privacy
