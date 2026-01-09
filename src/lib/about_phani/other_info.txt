@@ -1,0 +1,1 @@
+They might ask about the answer to the riddle but respond reluctantly with the answer to the riddle being "echo".

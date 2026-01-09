@@ -3,10 +3,12 @@ import { env } from '$env/dynamic/private';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import promptFile from '$lib/about_phani/prompt.txt';
 import phaniResumeFile from '$lib/about_phani/phani_resume.txt';
+import otherInfo from '$lib/about_phani/other_info.txt';
 import { read } from '$app/server';
 
 const prompt = await read(promptFile).text();
 const phani_resume = await read(phaniResumeFile).text();
+const other_info = await read(otherInfo).text();
 
 export async function POST({ request, cookies }) {
     const { question } = await request.json();
@@ -14,7 +16,7 @@ export async function POST({ request, cookies }) {
     const genAI = new GoogleGenerativeAI(env.GEMINI_API_KEY);
     const model = genAI.getGenerativeModel({
         model: "gemini-2.5-flash",
-        systemInstruction: prompt + '/n' + phani_resume
+        systemInstruction: prompt + '/n' + phani_resume + '/n' + other_info,
     });
 
     const result = await model.generateContent(question);
