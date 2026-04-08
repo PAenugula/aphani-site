@@ -1,0 +1,15 @@
+---
+title: 
+date: '2025-01-18'
+description: This is the first post on my new SvelteKit blog.
+---
+
+# Welcome
+
+This is the content of my first blog post. I'm using **SvelteKit** and **Mdsvex** to write this.
+
+## Features
+
+- Markdown support
+- Svelte components in markdown
+- Fast performance
