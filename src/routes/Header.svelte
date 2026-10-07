@@ -18,8 +18,16 @@
 			<li aria-current={$page.url.pathname === '/gallery' ? 'page': undefined}>
 				<a href="/gallery">gallery</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/chaos' ? 'page': undefined}>
+			<li
+				class="has-dropdown"
+				aria-current={$page.url.pathname.startsWith('/chaos') ? 'page' : undefined}
+			>
 				<a href="/chaos">chaos</a>
+				<ul class="dropdown">
+					<li>
+						<a href="/chaos/stars">stars</a>
+					</li>
+				</ul>
 			</li>
 		</ul>
 	</nav>
@@ -117,5 +125,63 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+	}
+
+	.has-dropdown .dropdown {
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translateX(-50%) translateY(0.25rem);
+		min-width: 7rem;
+		padding: 0.35rem 0;
+		margin: 0;
+		height: auto;
+		flex-direction: column;
+		align-items: stretch;
+		list-style: none;
+		background: var(--color-bg-2);
+		border: 1px solid var(--color-theme-2);
+		border-radius: 4px;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition:
+			opacity 0.15s ease,
+			visibility 0.15s ease,
+			transform 0.15s ease;
+		z-index: 20;
+		box-shadow: 0 8px 20px rgb(0 0 0 / 35%);
+	}
+
+	.has-dropdown:hover .dropdown,
+	.has-dropdown:focus-within .dropdown {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+		transform: translateX(-50%) translateY(0);
+	}
+
+	.has-dropdown .dropdown li {
+		height: auto;
+		width: 100%;
+	}
+
+	.has-dropdown .dropdown li::before {
+		display: none;
+	}
+
+	.has-dropdown .dropdown a {
+		display: block;
+		width: 100%;
+		padding: 0.55rem 0.85rem;
+		text-align: center;
+		color: var(--color-text);
+	}
+
+	.has-dropdown .dropdown a:hover,
+	.has-dropdown .dropdown a:focus-visible {
+		color: var(--color-bg-1);
+		background: var(--color-theme-1);
+		text-decoration: none;
 	}
 </style>
