@@ -46,6 +46,12 @@
 	{/if}
 
 	<p class="explanation">{apod.explanation}</p>
+
+	{#if apod.link}
+		<p class="source">
+			<a href={apod.link} target="_blank" rel="noopener noreferrer">View on NASA</a>
+		</p>
+	{/if}
 </article>
 
 <style>
@@ -128,5 +134,11 @@
 	.fallback {
 		margin: 0;
 		text-align: center;
+	}
+
+	.source {
+		margin: 0;
+		font-size: 0.85rem;
+		opacity: 0.8;
 	}
 </style>
